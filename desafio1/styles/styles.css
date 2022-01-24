@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+::-webkit-input-placeholder {
+  color: var(--white);
+  opacity: 0.5;
+  position: relative;
+  left: 1%;
+}
+
+header {
+  background: var(--linear);
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+  grid-template-columns: 1fr 2fr 1fr;
+  width: 100vw;
+}
+
+#text {
+  display: flex;
+  justify-content: space-between;
+  grid-column: 2/3;
+}
+
+.header-text {
+  color: var(--white);
+  font-family: var(--primary-font);
+}
+
+#search-container {
+  display: flex;
+  align-items: center;
+  grid-column: 2/3;
+  padding-bottom: 5vh;
+}
+
+.search-input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 5px;
+  padding-left: 5%;
+  color: var(--white);
+  height: 40px;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-icon {
+  position: absolute;
+  margin-left: 0.5vw;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: var(--light-gray);
+  min-height: 80vh;
+}
+
+.card {
+  margin: 30px 0 25px 0;
+  grid-column: 2/3;
+  height: auto;
+  box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
+  border-radius: 5px;
+  background-color: var(--white);
+}
+
+.heading,
+.title,
+.description {
+  font-family: var(--primary-font);
+  margin: 24px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--heading);
+  font-size: 14px;
+}
+
+.heart-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.title {
+  color: var(--title);
+  font-size: 26px;
+}
+
+.description {
+  color: var(--heading);
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  header,
+  main {
+    grid-template-columns: 1fr 4fr 1fr;
+  }
+
+  .search-input {
+    max-height: 12px;
+  }
+
+  #text,
+  .search-input,
+  .heading,
+  .description {
+    font-size: 4px;
+  }
+
+  .title {
+    font-size: 8px;
+  }
+
+  .heading, .description {
+    margin: 2vh 4vw 2vh 4vw;
+  }
+  
+  .title {
+    margin: 0 4vw 0 4vw;
+  }
+  
+  .card {
+    margin: 10px 0 10px 0;
+  }
+
+  .search-icon,
+  .heart-icon {
+    width: 5px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 620px) {
+  .search-input {
+    padding-left: 8%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .search-input {
+    padding-left: 10%;
+  }
+}
