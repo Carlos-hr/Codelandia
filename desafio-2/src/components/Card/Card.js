@@ -1,17 +1,20 @@
 import React from "react";
-import { imagesArray } from "./constants/images";
+import { imagesArray } from "../../constants/images";
+import "./styles.css";
 
 const Card = () => {
-
   const renderImages = () => {
     return imagesArray.map((image) => {
-      return <img src={image} key={image} alt="shoes" />;
+      return (
+        <div key={image} className="card">
+          <img src={image} alt="shoes" />
+        </div>
+      );
     });
   };
 
   return (
-    <div>
-      <p>Card</p>
+    <div className="card-container">
       {renderImages()}
     </div>
   );

@@ -1,12 +1,13 @@
 import React from "react";
-import { BoldText, Head, SimpleText } from "./styled";
+import "./styles.css";
+
 
 const Header = () => {
   return (
-    <Head>
-      <SimpleText>Ganhe R$ 10,00 de desconto no frete</SimpleText>
-      <BoldText>JordanShoes</BoldText>
-    </Head>
+    <div className="head">
+      <div className="simple-text">Ganhe R$ 10,00 de desconto no frete</div>
+      <div className="bold-text">JordanShoes</div>
+    </div>
   );
 };
 
