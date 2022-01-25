@@ -1,0 +1,14 @@
+.card-area {
+  height: auto;
+  background-color: var(--bgSite);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-area-heading {
+  text-align: center;
+}
+
+.card-area-title {
+  padding-top: 5vh;
+}
