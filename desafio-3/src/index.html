@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/src/styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/src/styles/variaveis.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <title>Página de login</title>
+</head>
+
+<body>
+    <main>
+        <div class="background">
+            <img src="assets/image.svg" class="background-image" />
+        </div>
+        <form>
+            <div class="form-header">
+                <p>Bem vindo de volta</p>
+                <h1>Faça login na sua conta</h1>
+            </div>
+
+            <div class="input-area">
+                <label for="remind-me"> E-mail </label>
+                <input type="email" name="email" class="login-input" />
+                <label for="remind-me" class="label-password"> Senha </label>
+                <input type="password" name="password" class="login-input" />
+            </div>
+
+            <div class="login-options">
+                <div>
+                    <input type="checkbox" id="remind-me" name="remind-me" />
+                    <label for="remind-me"> Lembre de mim </label>
+                </div>
+                <a class="link">Esqueceu sua senha? </a>
+            </div>
+
+            <div class="login-buttons">
+                <button class="login-button green">Entrar</button>
+                <button class="login-button social-login"><img src="/src/assets/google.svg" class="google-logo" /> Ou
+                    faça
+                    login com o Google </button>
+            </div>
+            <p class="signup">Não tem uma conta? <a class="link">Cadastre-se</a></p>
+        </form>
+    </main>
+</body>
+
+</html>
