@@ -48,6 +48,7 @@ main {
 form {
   margin: auto;
   font-family: Lato;
+  width: 350px;
 }
 
 .form-header {
@@ -124,4 +125,23 @@ form {
 .link {
   color: var(--blue);
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .background,
+  .background-image {
+    display: none;
+  }
+  .login-input,
+  .login-button,
+  form {
+    max-width: 300px;
+  }
+  main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 12px 0 12px;
+  }
 }
